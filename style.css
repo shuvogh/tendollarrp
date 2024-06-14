@@ -1,0 +1,123 @@
+
+
+  
+.amount {
+  position: absolute;
+  bottom: 500px;
+  left: 135px;
+  font-size: 10px;
+  color: #080808;
+  
+  
+}
+.center-image {
+  height: 93%;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 50%;
+  
+}
+
+.form {
+  margin: 10px;
+}
+
+.form input {
+  margin: 2px;
+}
+
+.form button {
+  margin-left: 2px;
+  margin-top: 5px;
+}
+
+.shopname {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.right {
+  position: fixed;
+  width: 490px;
+  height: 850px;
+  right: 200px;
+  background-image: url(img/1.jpg);
+  background-size: cover;
+/* background-size: contain; */
+  /* position: relative; */
+}
+
+.total {
+  opacity: 100%;
+  font-size: 20px;
+  position: fixed;
+  font-weight: bold;
+  right: 250px;
+  top: 310px;
+}
+
+#submits {
+  margin-top: 5px;
+}
+
+
+
+
+.right img {
+  width: 50%;
+}
+
+.date {
+  opacity: 100%;
+  position: absolute;
+  top: 490px;
+  right:130px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #080808;
+}
+
+.shopnam {
+  position: fixed;
+  width: 200px;
+  height: 20px;
+  /* background-color: aqua; */
+  top: 40px;
+  right: 300px;
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+.barcode {
+  position: fixed;
+  right: 320px;
+  top: 286px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font: bold;
+  font-size: large;
+}
+
+
+.shopid {
+  margin: 0; /* Remove default margin for h4 element */
+  font: bold;
+}
+
+button{
+  background-color: rgb(28, 140, 0);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.subtitle {
+  margin-left: 10px;
+}

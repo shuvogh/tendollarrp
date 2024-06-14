@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Recipe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="form">
+        <input type="date" placeholder="date" id="date" /><br />
+        <input type="text" placeholder="time" id="time" /><br />
+        <button id="submit" type="submit">Submit</button>
+      </div>
+      <br />
+
+      <div class="subtitle">
+        <div>
+          <input type="number" name="subtotal" id="subtotal" /><br />
+          <input type="number" name="sales" id="sales" /><br />
+          <input type="number" name="saless" id="saless" /><br />
+          <button id="submits" type="submit">Submit Amount</button>
+        </div>
+      </div>
+
+      <div class="shopname">
+        <select id="shopnam" name="shop">
+          <!-- FLASH OFFER -->
+          <option value="Albertsons">Albertsons</option>
+          <option value="McDonald's">McDonald's</option>
+          <option value="Wendy's">Wendy's</option>
+          <option value="Dunkin Donuts">Dunkin Donuts</option>
+          <option value="Bath & Body Works">Bath & Body Works</option>
+          <option value="Domino's Pizza">Domino's Pizza</option>
+          <option value="Starbucks">Starbucks</option>
+          <option value="GAP">GAP</option>
+          <option value="KFC">KFC</option>
+          <option value="7-Eleven">7-Eleven</option>
+          <option value="Pizzahut">Pizzahut</option>
+          <option value="Speedway">Speedway</option>
+          <option value="Dairy queen">Dairy queen</option>
+          <option value="Costco">Costco</option>
+          <option value="IKEA">IKEA</option>
+          <option value="Krispy Kreme Donuts">Krispy Kreme Donuts</option>
+          <option value="Staples">Staples</option>
+          <option value="Walgreens">Walgreens</option>
+          <option value="Sam's Club">Sam's Club</option>
+          <option value="ALDI">ALDI</option>
+          <option value="Shell">Shell</option>
+          <option value="Burger King">Burger King</option>
+          <option value="Papa John's">Papa John's</option>
+          <option value="ShopRite">ShopRite</option>
+          <option value="Taco Bell">Taco Bell</option>
+          <option value="Dollar Tree">Dollar Tree</option>
+          <option value="Circle K">Circle K</option>
+          <option value="CVS">CVS</option>
+          <option value="Family Dollar">Family Dollar</option>
+          <option value="Safeway">Safeway</option>
+          <option value="Subway">Subway</option>
+          
+
+
+          <!-- Others + shop -->
+          <!-- <option value="GoDaddy">shop 1</option>
+          <option value="QVC">shop 2</option>
+          <option value="Xfinity">shop 3</option>
+          <option value="Verizon">shop 4</option>
+          <option value="Hulu">shop 5</option>
+          <option value="Max">shop 6</option>
+          <option value="Nature">shop 7</option>
+          <option value="Roku">shop 8</option>
+          <option value="Sephora">shop 9</option>
+          <option value="Foster Grant">shop 10</option> -->
+
+        </select>
+        <button id="submitss" type="submit">Add Shop</button>
+      </div>
+
+      <!-- dollar offer shop list code  -->
+      <div class="shopname">
+        <select id="offer-shop" name="offer">
+          <!-- <option value="ASTEPRO® 4650081590">1$ offer 1</option>
+          <option value="ASTEPRO® 4650081565">1$ offer 2</option> -->
+          <option value="ASTEPRO® 4650021613">1$ offer 3</option>
+          <!-- <option value="ASTEPRO® 046500032301">1$ offer 4</option> -->
+          <!-- <option value="ASTEPRO® 310119021781">2$ offer 1</option> -->
+          <option value="ASTEPRO® 046500032325">10$ offer 1</option>
+          <option value="ASTEPRO® 046500032332">10$ offer 2</option>
+          <!-- <option value="ASTEPRO® 353100748618">12$ offer 1</option> -->
+        </select>
+        <button id="submitsss" type="submit">Add dollar ID</button>
+      </div>
+
+    </div>
+
+    <div class="right">
+      <div class="date">
+        <span id="dateIn">12/11/2023</span> <span id="timeIn">4:20PM</span>
+      </div>
+
+      <div class="total">
+        <span id="subtotalin">30.40</span><br />
+        <span id="salesin">30.40</span><br />
+        <span id="salessin">30.40</span><br />
+      </div>
+
+      <div class="shopnam">
+        <div class="shopnam">
+          <h4 id="shopnamin" class="shopid">shop</h4>
+        </div>
+      </div>
+
+      <div class="barcode">
+        <h4 id="shop-offer-add">shop offer</h4>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+
+    // date time added script 
+    document.getElementById("submit").addEventListener("click", function () {
+      const date = document.getElementById("date").value;
+      const time = document.getElementById("time").value;
+
+      document.getElementById("dateIn").innerText = date;
+      document.getElementById("timeIn").innerText = time;
+    });
+
+    // amount added function 
+    document.getElementById("submits").addEventListener("click", function () {
+      const subtotal = document.getElementById("subtotal").value;
+      const sales = document.getElementById("sales").value;
+      const saless = document.getElementById("saless").value;
+
+      document.getElementById("subtotalin").innerText = subtotal;
+      document.getElementById("salesin").innerText = sales;
+      document.getElementById("salessin").innerText = saless;
+    });
+
+    // shopname added  function 
+    document.getElementById("submitss").addEventListener("click", function () {
+        const subtotal = document.getElementById("shopnam").value;
+
+        document.getElementById("shopnamin").innerText = subtotal;
+      });
+
+      // dollar offer added 
+    document.getElementById("submitsss").addEventListener("click", function () {
+      const offerAdd = document.getElementById("offer-shop").value;
+
+      document.getElementById("shop-offer-add").innerText = offerAdd;
+    })
+
+  </script>
+</body>
+
+</html>
